@@ -50,7 +50,7 @@ def hit?(card_total)
     invalid_command
     prompt_user
   end
-  n
+  card_total
 end
 
 def invalid_command
@@ -66,8 +66,8 @@ def runner
   # code runner here
   until card_total >= 21 do
   welcome
-  initial_round
-  hit?
+  card_total = initial_round
+  hit?()
   display_card_total
   end
 end
