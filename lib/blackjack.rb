@@ -1,3 +1,4 @@
+require pry
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -73,3 +74,4 @@ def runner
   end_game(card_total)
 end
     
+binding.pry
